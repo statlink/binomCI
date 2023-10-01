@@ -53,9 +53,9 @@ binomCIs <- function(x, n, a = 0.05) {
   com <- z * sqrt(n) / nb * sqrt( pq + z^2/4/n )
   res <- cbind(pb - com, pb + com)
   ep <- which( x == 1 )
-  if ( length(ep) > 0 )  res[ep, 1] <-  -log(1 - a)/n[ep]
+  if ( length(ep) > 0 )  res[ep, 1] <-  -log(1 - a)/n
   ep <- which( n - x == 1 )
-  if ( length(ep) > 0 )  res[ep, 2] <- 1 + log(1 - a)/n[ep]
+  if ( length(ep) > 0 )  res[ep, 2] <- 1 + log(1 - a)/n
   mod[[ 7 ]] <- res
   colnames(mod[[ 7 ]]) <- c(paste(a/2, "%", sep = ""), paste(1 - a/2, "%", sep = ""))
   ## Score

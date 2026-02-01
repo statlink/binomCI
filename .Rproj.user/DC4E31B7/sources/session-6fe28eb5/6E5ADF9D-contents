@@ -55,8 +55,6 @@ Vollset, S. E. (1993). Confidence intervals for a binomial proportion. Statistic
 
 \note{
 I would like to express my acknowledgements to Marc Girondot for spotting an error in the "Wilson" method in two extreme cases, when \eqn{x=1} and when \eqn{n-x=1}. He also proposed a modification that exists in the package "Hmisc" and the relevant paper to cite is Agresti & Coull (1998).
-
-Herman Callaert pointed out to me a limitation of the Agresti & Coull (1998) CI, and I fixed it. Their formula is valid only for \eqn{95\%} confidence.
 }
 
 
